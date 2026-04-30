@@ -334,7 +334,7 @@ class DaikinEkhheComponent : public Component, public uart::UARTDevice {
   static constexpr uint8_t kCdContextFramesBefore = 6;
   static constexpr uint8_t kCdContextFramesAfter = 8;
   static constexpr uint32_t kTxDelayAfterD2Ms = 75;
-  static constexpr uint8_t kTxMaxRepeats = 5;
+  static constexpr uint8_t kTxMaxRepeats = 30;
 
   static constexpr uint8_t kPacketMaskDD = 1 << 0;
   static constexpr uint8_t kPacketMaskD2 = 1 << 1;
